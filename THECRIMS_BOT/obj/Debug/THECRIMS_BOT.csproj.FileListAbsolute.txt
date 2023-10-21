@@ -1,0 +1,9 @@
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.config
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.pdb
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.csproj.AssemblyReference.cache
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.Properties.Resources.resources
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.csproj.GenerateResource.cache
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.csproj.CoreCompileInputs.cache
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.exe
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.pdb
