@@ -7,3 +7,4 @@ C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debu
 C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.csproj.CoreCompileInputs.cache
 C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.exe
 C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.pdb
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.Form1.resources
