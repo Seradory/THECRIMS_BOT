@@ -1,0 +1,107 @@
+$(document).ready(function() {
+
+    formSubmitted = false;
+
+    $('#acceptCookies').click(function() {
+        $.cookie('cookies_accepted', 'true', { expires: 365, path: '/' });
+        $('#cookie-information-bar').remove();
+    });
+
+    $(document).click(function(e) {
+        if ('isTrusted' in e && !e.isTrusted) {
+            document.location.href = '/logout?reason=not-trusted';
+        }
+    });
+
+    $('.focus').focus();
+
+    $('#selectall').click(function(e){
+        var table = $(e.target).closest('table');
+        $('td input:checkbox',table).prop('checked',this.checked);
+    });
+
+    $('li').click(function(event) {
+        link = $(this).data('link');
+
+        if(typeof link != 'undefined') {
+            redirect(link);
+        }
+    });
+
+    $(":button").click(function(event) {
+        link = $(this).data('link');
+
+        if (typeof link != 'undefined') {
+            redirect(link);
+        }
+
+        $(this.form).submit();
+    });
+
+    $(':submit').keydown(function(e) {
+        if(e.which === 13 || e.which === 32) {
+            e.stopPropagation();
+            e.preventDefault();
+            formSubmitted = true;
+            return false;
+        }
+    });
+
+    $('select').keydown(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+    });
+
+    $('a').click(function(e) {
+        if ($(this).hasClass('confirmChoice')) {
+            if (!confirm(langConfirm)) {
+                restoreSubmitButtons();
+				e.stopPropagation();
+				e.preventDefault();
+                return false;
+            }
+        }
+    });
+
+    $("form").submit(function(event) {
+        if (window.location.href.indexOf('credits') !== -1) {
+            return true;
+        }
+
+        if ($(this).hasClass('confirmChoice')) {
+            if (!confirm(langConfirm)) {
+                restoreSubmitButtons();
+                event.stopPropagation();
+                event.preventDefault();
+                return false;
+            }
+        }
+
+        if (formSubmitted) {
+            restoreSubmitButtons();
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
+        $(':submit').prop('disabled',true);
+
+        if (typeof $(this).data('controlselectbox') != undefined && $(this).data('controlselectbox') != '') {
+            var name = $(this).data('controlselectbox');
+            if ($('select[name='+name+']', this).val() == '-') {
+                alert(langCheckbox);
+                restoreSubmitButtons();
+                event.stopPropagation();
+                event.preventDefault();
+                return false;
+            }
+        }
+
+        formSubmitted = true;
+    });
+
+    $('body').on('hidden.bs.modal', '.modal', function () {
+        $(this).removeData('bs.modal');
+    });
+});

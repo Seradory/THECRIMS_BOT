@@ -1,0 +1,46 @@
+function redirect(url) {
+	window.location.href=url;
+}
+
+function confirmChoice() {
+	if (confirm(langConfirm)) {
+		return true;
+	} else {
+        restoreSubmitButtons();
+		return false;
+	}
+}
+
+function avatarBorder(id, what)
+{
+	choosen = document.getElementById('avatar').value;
+
+	if (what == 'click') {
+		for (i=1;i<100;i++) {
+			obj = document.getElementById(i);
+			if (obj) {
+				obj.style.border = '';
+			}
+		}
+
+		document.getElementById(id).style.border = '1px solid red';
+		document.getElementById(id).value = id;
+		document.getElementById('avatar').value = id;
+	}
+}
+
+function ToggleCheckAll(trigger) {
+    $("input[type=checkbox]").each(function () {
+        $(this).prop("checked", !$(this).prop("checked"));
+    });
+}
+
+function restoreSubmitButtons() {
+    $(':submit').prop('disabled',false);
+    $(':button').prop('disabled',false);
+    formSubmitted = false;
+}
+
+function t(key) {
+    return translation[key];
+}

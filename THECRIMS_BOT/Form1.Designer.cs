@@ -75,14 +75,15 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(0, -1);
+            this.tabControl1.Location = new System.Drawing.Point(0, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(804, 450);
+            this.tabControl1.Size = new System.Drawing.Size(804, 448);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.Gray;
             this.tabPage1.Controls.Add(this.button_unhide_hide_browser);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.checkBox_acil_cikis);
@@ -101,10 +102,9 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(796, 424);
+            this.tabPage1.Size = new System.Drawing.Size(796, 422);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manuel Control";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -446,11 +446,13 @@
             this.button_unhide_hide_browser.TabIndex = 15;
             this.button_unhide_hide_browser.Text = "Siteyi Göster/ Gizle";
             this.button_unhide_hide_browser.UseVisualStyleBackColor = true;
+            this.button_unhide_hide_browser.Click += new System.EventHandler(this.button_unhide_hide_browser_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";

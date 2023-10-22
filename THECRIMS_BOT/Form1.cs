@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace THECRIMS_BOT
 {
@@ -20,11 +21,24 @@ namespace THECRIMS_BOT
         static string kullanici_sifre;
         static bool kullanici_bilgileri_kayitli=false;
         static FileStream kullanici_bilgileri_dosyasi;
-
+        static web thecrims_page;
+        WebView2 web;
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                
+                thecrims_page = new web();
+                web = thecrims_page.webView21;
+                
+            }
+            catch (Exception)
+            {
 
+                MessageBox.Show("Siteye Bağlanılamadı.");
+            }
+            
             if (!(File.Exists(Directory.GetCurrentDirectory() + @"/data.txt")))
             {
                 kullanici_bilgileri_dosyasi=File.Create((Directory.GetCurrentDirectory() + @"/data.txt"));
@@ -47,6 +61,7 @@ namespace THECRIMS_BOT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -65,10 +80,10 @@ namespace THECRIMS_BOT
 
         }
 
-        private void button_login_Click(object sender, EventArgs e)
+        private async void button_login_Click(object sender, EventArgs e)
         {
 
-
+            #region 
             if (textBox_id.Text!=string.Empty && textBox_pw.Text!=string.Empty)
                 {
                     kullanici_adi=textBox_id.Text;
@@ -84,6 +99,16 @@ namespace THECRIMS_BOT
                 {
                     MessageBox.Show("Kullanıcı Adı Şifre Giriniz", "HATA");
                 }
+            #endregion
+
+            JS_Gecis login = new JS_Gecis(web);
+            login.FindElementByAttiribute_Write("autocomplete", "username", "Serador123");
+            string str =await login.FindElementByAttiribute_Read("autocomplete", "username");
+            MessageBox.Show(str);
+
+
+            // var res = await login.FindElementsByAttributeAsync("data-v-1f898bd1", s);
+            await login.soygun_listesi_getirAsync();
 
 
         }
@@ -105,6 +130,18 @@ namespace THECRIMS_BOT
             {
             }
 
+        }
+
+        private void button_unhide_hide_browser_Click(object sender, EventArgs e)
+        {
+            if (thecrims_page.Visible)
+            {
+                thecrims_page.Hide();
+            }
+            else
+            {
+                thecrims_page.Show();
+            }
         }
     }
 }
