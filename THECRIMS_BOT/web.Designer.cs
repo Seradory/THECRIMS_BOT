@@ -41,8 +41,7 @@
             this.webView21.Location = new System.Drawing.Point(12, 37);
             this.webView21.Name = "webView21";
             this.webView21.Size = new System.Drawing.Size(984, 680);
-            this.webView21.Source = new System.Uri("file:///C:/Users/alise/Desktop/Yaz%C4%B1l%C4%B1m/THECRIMS_BOT/THECRIMS_BOT/THECRI" +
-        "MS_BOT/bin/Debug/Test_Pages/The%20Crims.html#/", System.UriKind.Absolute);
+            this.webView21.Source = new System.Uri("https://www.thecrims.com/#/", System.UriKind.Absolute);
             this.webView21.TabIndex = 0;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
@@ -66,7 +65,9 @@
             this.Controls.Add(this.button_webwiev_gizle);
             this.Controls.Add(this.webView21);
             this.Name = "web";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "web";
+            this.Load += new System.EventHandler(this.web_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
 

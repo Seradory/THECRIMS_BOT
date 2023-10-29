@@ -30,41 +30,44 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button_login = new System.Windows.Forms.Button();
-            this.textBox_id = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox_pw = new System.Windows.Forms.TextBox();
-            this.listBox_soygun_listesi = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button_soygun_yap = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.checkBox_use_all_stamina = new System.Windows.Forms.CheckBox();
+            this.button_unhide_hide_browser = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.checkBox_acil_cikis = new System.Windows.Forms.CheckBox();
+            this.button_kontakt_detektor = new System.Windows.Forms.Button();
+            this.button_bara_git = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label_stamina = new System.Windows.Forms.Label();
-            this.label_hp = new System.Windows.Forms.Label();
-            this.label_bagimlilik = new System.Windows.Forms.Label();
             this.label_soygun_gucu = new System.Windows.Forms.Label();
             this.label_para = new System.Windows.Forms.Label();
             this.label_tolerans = new System.Windows.Forms.Label();
             this.label_karizma = new System.Windows.Forms.Label();
             this.label_str = new System.Windows.Forms.Label();
             this.label_int = new System.Windows.Forms.Label();
-            this.button_bara_git = new System.Windows.Forms.Button();
-            this.button_kontakt_detektor = new System.Windows.Forms.Button();
-            this.checkBox_acil_cikis = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button_unhide_hide_browser = new System.Windows.Forms.Button();
+            this.label_bagimlilik = new System.Windows.Forms.Label();
+            this.label_hp = new System.Windows.Forms.Label();
+            this.label_stamina = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button_soygun_yap = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listBox_soygun_listesi = new System.Windows.Forms.ListBox();
+            this.textBox_pw = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox_id = new System.Windows.Forms.TextBox();
+            this.button_login = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label_tickets = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -84,6 +87,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Gray;
+            this.tabPage1.Controls.Add(this.checkBox_use_all_stamina);
             this.tabPage1.Controls.Add(this.button_unhide_hide_browser);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.checkBox_acil_cikis);
@@ -106,120 +110,72 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manuel Control";
             // 
-            // tabPage2
+            // checkBox_use_all_stamina
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(796, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Otomatik Kontrol";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.checkBox_use_all_stamina.AutoSize = true;
+            this.checkBox_use_all_stamina.Enabled = false;
+            this.checkBox_use_all_stamina.Location = new System.Drawing.Point(629, 394);
+            this.checkBox_use_all_stamina.Name = "checkBox_use_all_stamina";
+            this.checkBox_use_all_stamina.Size = new System.Drawing.Size(100, 17);
+            this.checkBox_use_all_stamina.TabIndex = 16;
+            this.checkBox_use_all_stamina.Text = "Use All Stamina";
+            this.checkBox_use_all_stamina.UseVisualStyleBackColor = true;
+            this.checkBox_use_all_stamina.CheckedChanged += new System.EventHandler(this.checkBox_use_all_stamina_CheckedChangedAsync);
             // 
-            // tabPage3
+            // button_unhide_hide_browser
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(796, 424);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.button_unhide_hide_browser.Location = new System.Drawing.Point(215, 22);
+            this.button_unhide_hide_browser.Name = "button_unhide_hide_browser";
+            this.button_unhide_hide_browser.Size = new System.Drawing.Size(167, 78);
+            this.button_unhide_hide_browser.TabIndex = 15;
+            this.button_unhide_hide_browser.Text = "Siteyi Göster/ Gizle";
+            this.button_unhide_hide_browser.UseVisualStyleBackColor = true;
+            this.button_unhide_hide_browser.Click += new System.EventHandler(this.button_unhide_hide_browser_Click);
             // 
-            // label1
+            // label13
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(638, 228);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(139, 17);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Kontakt Detektörü";
             // 
-            // button_login
+            // checkBox_acil_cikis
             // 
-            this.button_login.Location = new System.Drawing.Point(12, 87);
-            this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(75, 23);
-            this.button_login.TabIndex = 1;
-            this.button_login.Text = "Giriş";
-            this.button_login.UseVisualStyleBackColor = true;
-            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            this.checkBox_acil_cikis.AutoSize = true;
+            this.checkBox_acil_cikis.Location = new System.Drawing.Point(93, 177);
+            this.checkBox_acil_cikis.Name = "checkBox_acil_cikis";
+            this.checkBox_acil_cikis.Size = new System.Drawing.Size(117, 17);
+            this.checkBox_acil_cikis.TabIndex = 13;
+            this.checkBox_acil_cikis.Text = "Kontaktta Acil Çıkış";
+            this.checkBox_acil_cikis.UseVisualStyleBackColor = true;
             // 
-            // textBox_id
+            // button_kontakt_detektor
             // 
-            this.textBox_id.Location = new System.Drawing.Point(79, 29);
-            this.textBox_id.Name = "textBox_id";
-            this.textBox_id.Size = new System.Drawing.Size(100, 20);
-            this.textBox_id.TabIndex = 2;
+            this.button_kontakt_detektor.BackColor = System.Drawing.Color.SandyBrown;
+            this.button_kontakt_detektor.Location = new System.Drawing.Point(691, 248);
+            this.button_kontakt_detektor.Name = "button_kontakt_detektor";
+            this.button_kontakt_detektor.Size = new System.Drawing.Size(38, 32);
+            this.button_kontakt_detektor.TabIndex = 12;
+            this.button_kontakt_detektor.UseVisualStyleBackColor = false;
+            this.button_kontakt_detektor.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // checkBox1
+            // button_bara_git
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(99, 91);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Beni Hatırla";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Şifre :";
-            // 
-            // textBox_pw
-            // 
-            this.textBox_pw.Location = new System.Drawing.Point(79, 61);
-            this.textBox_pw.Name = "textBox_pw";
-            this.textBox_pw.Size = new System.Drawing.Size(100, 20);
-            this.textBox_pw.TabIndex = 5;
-            // 
-            // listBox_soygun_listesi
-            // 
-            this.listBox_soygun_listesi.FormattingEnabled = true;
-            this.listBox_soygun_listesi.Location = new System.Drawing.Point(411, 29);
-            this.listBox_soygun_listesi.Name = "listBox_soygun_listesi";
-            this.listBox_soygun_listesi.Size = new System.Drawing.Size(212, 355);
-            this.listBox_soygun_listesi.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(448, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Soygun Listesi";
-            // 
-            // button_soygun_yap
-            // 
-            this.button_soygun_yap.Enabled = false;
-            this.button_soygun_yap.Location = new System.Drawing.Point(411, 390);
-            this.button_soygun_yap.Name = "button_soygun_yap";
-            this.button_soygun_yap.Size = new System.Drawing.Size(212, 23);
-            this.button_soygun_yap.TabIndex = 8;
-            this.button_soygun_yap.Text = "ONU SOY!";
-            this.button_soygun_yap.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Stamina :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.button_bara_git.Location = new System.Drawing.Point(12, 173);
+            this.button_bara_git.Name = "button_bara_git";
+            this.button_bara_git.Size = new System.Drawing.Size(75, 23);
+            this.button_bara_git.TabIndex = 11;
+            this.button_bara_git.Text = "Enerji Yenile";
+            this.button_bara_git.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightBlue;
+            this.groupBox1.Controls.Add(this.label_tickets);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label_soygun_gucu);
             this.groupBox1.Controls.Add(this.label_para);
             this.groupBox1.Controls.Add(this.label_tolerans);
@@ -244,106 +200,6 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Statlar";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "HP         :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Bağımlılık:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(118, 63);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Güç";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 63);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Zeka";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 97);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 13);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Karizma";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 145);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Soygun Gücü :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(9, 132);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 13);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Para              :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(109, 97);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 13);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Tolerans";
-            // 
-            // label_stamina
-            // 
-            this.label_stamina.AutoSize = true;
-            this.label_stamina.Location = new System.Drawing.Point(63, 16);
-            this.label_stamina.Name = "label_stamina";
-            this.label_stamina.Size = new System.Drawing.Size(10, 13);
-            this.label_stamina.TabIndex = 18;
-            this.label_stamina.Text = "-";
-            // 
-            // label_hp
-            // 
-            this.label_hp.AutoSize = true;
-            this.label_hp.Location = new System.Drawing.Point(63, 29);
-            this.label_hp.Name = "label_hp";
-            this.label_hp.Size = new System.Drawing.Size(10, 13);
-            this.label_hp.TabIndex = 19;
-            this.label_hp.Text = "-";
-            // 
-            // label_bagimlilik
-            // 
-            this.label_bagimlilik.AutoSize = true;
-            this.label_bagimlilik.Location = new System.Drawing.Point(63, 42);
-            this.label_bagimlilik.Name = "label_bagimlilik";
-            this.label_bagimlilik.Size = new System.Drawing.Size(10, 13);
-            this.label_bagimlilik.TabIndex = 20;
-            this.label_bagimlilik.Text = "-";
             // 
             // label_soygun_gucu
             // 
@@ -399,54 +255,236 @@
             this.label_int.TabIndex = 26;
             this.label_int.Text = "-";
             // 
-            // button_bara_git
+            // label_bagimlilik
             // 
-            this.button_bara_git.Location = new System.Drawing.Point(12, 173);
-            this.button_bara_git.Name = "button_bara_git";
-            this.button_bara_git.Size = new System.Drawing.Size(75, 23);
-            this.button_bara_git.TabIndex = 11;
-            this.button_bara_git.Text = "Enerji Yenile";
-            this.button_bara_git.UseVisualStyleBackColor = true;
+            this.label_bagimlilik.AutoSize = true;
+            this.label_bagimlilik.Location = new System.Drawing.Point(63, 42);
+            this.label_bagimlilik.Name = "label_bagimlilik";
+            this.label_bagimlilik.Size = new System.Drawing.Size(10, 13);
+            this.label_bagimlilik.TabIndex = 20;
+            this.label_bagimlilik.Text = "-";
             // 
-            // button_kontakt_detektor
+            // label_hp
             // 
-            this.button_kontakt_detektor.BackColor = System.Drawing.Color.SandyBrown;
-            this.button_kontakt_detektor.Location = new System.Drawing.Point(691, 248);
-            this.button_kontakt_detektor.Name = "button_kontakt_detektor";
-            this.button_kontakt_detektor.Size = new System.Drawing.Size(38, 32);
-            this.button_kontakt_detektor.TabIndex = 12;
-            this.button_kontakt_detektor.UseVisualStyleBackColor = false;
-            this.button_kontakt_detektor.Click += new System.EventHandler(this.button1_Click_1);
+            this.label_hp.AutoSize = true;
+            this.label_hp.Location = new System.Drawing.Point(63, 29);
+            this.label_hp.Name = "label_hp";
+            this.label_hp.Size = new System.Drawing.Size(10, 13);
+            this.label_hp.TabIndex = 19;
+            this.label_hp.Text = "-";
             // 
-            // checkBox_acil_cikis
+            // label_stamina
             // 
-            this.checkBox_acil_cikis.AutoSize = true;
-            this.checkBox_acil_cikis.Location = new System.Drawing.Point(93, 177);
-            this.checkBox_acil_cikis.Name = "checkBox_acil_cikis";
-            this.checkBox_acil_cikis.Size = new System.Drawing.Size(117, 17);
-            this.checkBox_acil_cikis.TabIndex = 13;
-            this.checkBox_acil_cikis.Text = "Kontaktta Acil Çıkış";
-            this.checkBox_acil_cikis.UseVisualStyleBackColor = true;
+            this.label_stamina.AutoSize = true;
+            this.label_stamina.Location = new System.Drawing.Point(63, 16);
+            this.label_stamina.Name = "label_stamina";
+            this.label_stamina.Size = new System.Drawing.Size(10, 13);
+            this.label_stamina.TabIndex = 18;
+            this.label_stamina.Text = "-";
             // 
-            // label13
+            // label10
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(638, 228);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(139, 17);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Kontakt Detektörü";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 145);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 13);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Soygun Gücü :";
             // 
-            // button_unhide_hide_browser
+            // label11
             // 
-            this.button_unhide_hide_browser.Location = new System.Drawing.Point(215, 22);
-            this.button_unhide_hide_browser.Name = "button_unhide_hide_browser";
-            this.button_unhide_hide_browser.Size = new System.Drawing.Size(167, 78);
-            this.button_unhide_hide_browser.TabIndex = 15;
-            this.button_unhide_hide_browser.Text = "Siteyi Göster/ Gizle";
-            this.button_unhide_hide_browser.UseVisualStyleBackColor = true;
-            this.button_unhide_hide_browser.Click += new System.EventHandler(this.button_unhide_hide_browser_Click);
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(9, 132);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 13);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Para              :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(109, 97);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(48, 13);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Tolerans";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 97);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Karizma";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(32, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Zeka";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(118, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Güç";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Bağımlılık:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "HP         :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Stamina :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // button_soygun_yap
+            // 
+            this.button_soygun_yap.Enabled = false;
+            this.button_soygun_yap.Location = new System.Drawing.Point(411, 390);
+            this.button_soygun_yap.Name = "button_soygun_yap";
+            this.button_soygun_yap.Size = new System.Drawing.Size(212, 23);
+            this.button_soygun_yap.TabIndex = 8;
+            this.button_soygun_yap.Text = "ONU SOY!";
+            this.button_soygun_yap.UseVisualStyleBackColor = true;
+            this.button_soygun_yap.Click += new System.EventHandler(this.button_soygun_yap_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(448, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Soygun Listesi";
+            // 
+            // listBox_soygun_listesi
+            // 
+            this.listBox_soygun_listesi.FormattingEnabled = true;
+            this.listBox_soygun_listesi.Location = new System.Drawing.Point(411, 29);
+            this.listBox_soygun_listesi.Name = "listBox_soygun_listesi";
+            this.listBox_soygun_listesi.Size = new System.Drawing.Size(212, 355);
+            this.listBox_soygun_listesi.TabIndex = 6;
+            this.listBox_soygun_listesi.SelectedIndexChanged += new System.EventHandler(this.listBox_soygun_listesi_SelectedIndexChanged);
+            // 
+            // textBox_pw
+            // 
+            this.textBox_pw.Location = new System.Drawing.Point(79, 61);
+            this.textBox_pw.Name = "textBox_pw";
+            this.textBox_pw.Size = new System.Drawing.Size(100, 20);
+            this.textBox_pw.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Şifre :";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(99, 91);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "Beni Hatırla";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // textBox_id
+            // 
+            this.textBox_id.Location = new System.Drawing.Point(79, 29);
+            this.textBox_id.Name = "textBox_id";
+            this.textBox_id.Size = new System.Drawing.Size(100, 20);
+            this.textBox_id.TabIndex = 2;
+            // 
+            // button_login
+            // 
+            this.button_login.Location = new System.Drawing.Point(12, 87);
+            this.button_login.Name = "button_login";
+            this.button_login.Size = new System.Drawing.Size(75, 23);
+            this.button_login.TabIndex = 1;
+            this.button_login.Text = "Giriş";
+            this.button_login.UseVisualStyleBackColor = true;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kullanıcı Adı";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(796, 422);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Otomatik Kontrol";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(796, 422);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label_tickets
+            // 
+            this.label_tickets.AutoSize = true;
+            this.label_tickets.Location = new System.Drawing.Point(71, 110);
+            this.label_tickets.Name = "label_tickets";
+            this.label_tickets.Size = new System.Drawing.Size(10, 13);
+            this.label_tickets.TabIndex = 28;
+            this.label_tickets.Text = "-";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(63, 97);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 13);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Bilet";
             // 
             // Form1
             // 
@@ -506,6 +544,9 @@
         private System.Windows.Forms.Button button_bara_git;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button_unhide_hide_browser;
+        private System.Windows.Forms.CheckBox checkBox_use_all_stamina;
+        private System.Windows.Forms.Label label_tickets;
+        private System.Windows.Forms.Label label15;
     }
 }
 

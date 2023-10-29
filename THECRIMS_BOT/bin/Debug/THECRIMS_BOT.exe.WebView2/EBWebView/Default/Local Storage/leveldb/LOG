@@ -1,3 +1,17 @@
-2023/10/22-22:30:45.341 608c Reusing MANIFEST C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2023/10/22-22:30:45.341 608c Recovering log #61
-2023/10/22-22:30:45.344 608c Reusing old log C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000061.log 
+2023/10/28-23:36:17.861 6594 Reusing MANIFEST C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2023/10/28-23:36:17.862 6594 Recovering log #1416
+2023/10/28-23:36:17.864 6594 Level-0 table #1419: started
+2023/10/28-23:36:17.870 6594 Level-0 table #1419: 281075 bytes OK
+2023/10/28-23:36:17.874 6594 Delete type=0 #1416
+2023/10/28-23:40:48.717 6594 Level-0 table #1422: started
+2023/10/28-23:40:48.723 6594 Level-0 table #1422: 275902 bytes OK
+2023/10/28-23:40:48.726 6594 Delete type=0 #1420
+2023/10/28-23:40:48.726 4038 Compacting 4@0 + 1@1 files
+2023/10/28-23:40:48.735 4038 Generated table #1423@0: 18 keys, 280397 bytes
+2023/10/28-23:40:48.735 4038 Compacted 4@0 + 1@1 files => 280397 bytes
+2023/10/28-23:40:48.736 4038 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/10/28-23:40:48.737 4038 Delete type=2 #1412
+2023/10/28-23:40:48.737 4038 Delete type=2 #1414
+2023/10/28-23:40:48.737 4038 Delete type=2 #1417
+2023/10/28-23:40:48.737 4038 Delete type=2 #1419
+2023/10/28-23:40:48.737 4038 Delete type=2 #1422

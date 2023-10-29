@@ -19,6 +19,7 @@ C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debu
 C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.web.resources
 C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\obj\Debug\THECRIMS_BOT.csproj.CopyComplete
-C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\HtmlAgilityPack.dll
-C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\HtmlAgilityPack.pdb
-C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\HtmlAgilityPack.xml
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\System.Drawing.Common.dll
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\System.Drawing.Common.xml

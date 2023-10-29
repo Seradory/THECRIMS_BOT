@@ -1,3 +1,8 @@
-2023/10/22-22:28:05.629 24e4 Reusing MANIFEST C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2023/10/22-22:28:05.630 24e4 Recovering log #61
-2023/10/22-22:28:05.632 24e4 Reusing old log C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000061.log 
+2023/10/28-23:29:15.399 5ecc Reusing MANIFEST C:\Users\alise\Desktop\Yazılım\THECRIMS_BOT\THECRIMS_BOT\THECRIMS_BOT\bin\Debug\THECRIMS_BOT.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2023/10/28-23:29:15.400 5ecc Recovering log #1411
+2023/10/28-23:29:15.403 5ecc Level-0 table #1414: started
+2023/10/28-23:29:15.413 5ecc Level-0 table #1414: 275915 bytes OK
+2023/10/28-23:29:15.417 5ecc Delete type=0 #1411
+2023/10/28-23:31:38.827 7430 Level-0 table #1417: started
+2023/10/28-23:31:38.831 7430 Level-0 table #1417: 275898 bytes OK
+2023/10/28-23:31:38.832 7430 Delete type=0 #1415

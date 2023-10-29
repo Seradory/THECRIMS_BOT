@@ -26,5 +26,10 @@ namespace THECRIMS_BOT
         {
             this.Hide();
         }
+
+        private void web_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
